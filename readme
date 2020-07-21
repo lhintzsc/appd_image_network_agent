@@ -1,0 +1,18 @@
+10.51.71.58 (host)
+
+172.23.0.1 (network-agent gateway)
+172.23.0.2 (network-agent)
+
+172.20.0.1 (java-agent gateway)
+172.20.0.2 (java-agent)
+
+
+host:
+ping 172.23.0.2 (OK)
+ping 172.20.0.2 (OK)
+nmap -p 3892 localhost (OK)
+nmap -p 3892 10.51.71.58 (OK)
+nmap -p 3892 172.23.0.2 (OK)
+
+java-agent:
+ping 10.51.71.58 (OK)
